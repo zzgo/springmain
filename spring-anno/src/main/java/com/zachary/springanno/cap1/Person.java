@@ -11,9 +11,13 @@ public class Person {
     private int age;
 
     public Person() {
+        System.out.println("Person" +
+                " constructor....");
     }
 
     public Person(String name, int age) {
+        System.out.println("Person" +
+                " constructor....");
         this.name = name;
         this.age = age;
     }
@@ -40,5 +44,13 @@ public class Person {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    public void init() {
+        System.out.println("init....");
+    }
+
+    public void destroy() {
+        System.out.println("destroy...");
     }
 }
